@@ -14,8 +14,9 @@ xPath
 from selenium import webdriver
 import time
 
-driver = webdriver.Chrome('./chromedriver')
-driver.maximize_window()
+chromepath=r"C:\Users\7000026199\Downloads\chromedriver_win32\chromedriver.exe"
+from selenium import webdriver
+driver= webdriver.Chrome(executable_path=chromepath)
 driver.get("http://demowebshop.tricentis.com/")
 time.sleep(3)
 
