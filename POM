@@ -1,0 +1,35 @@
+#What is POM why do we need it and what we lose if we use it
+
+Definition-- POM(Page Object Model)is a object design pattern in Python
+
+Where web pages are represented as classes, and the various elements on the page 
+are defined as variables of the class. All possible user interactions can then be 
+implemented as functions on the class.
+
+
+A better approach to script maintenance is to create a separate class file which would find 
+web elements, fill them or verify them. This class can be reused in all the scripts using that 
+element. In future, if there is a change in the web element, we need to make the change in 
+just 1 class file and not 10 different scripts.
+- This approach is called Page Object Model (POM). 
+- It helps make the code more readable, maintainable, and reusable.
+
+
+disadvantage-
+
+if there is an application with thousands of web pages than the time and the effort in develpoing of automation framework will be high 
+
+
+
+
+
+
+# Best Practices Of POM
+
+1)
+
+
+
+
+
+
