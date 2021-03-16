@@ -1,0 +1,77 @@
+#locators stratergies usage, when to use and what to use
+
+There are 8 locators to identify object on the webpage:
+
+id 
+name
+link text
+Partial Linktext
+Tagname
+Class
+CSS Selector
+xPath
+
+from selenium import webdriver
+import time
+
+driver = webdriver.Chrome('./chromedriver')
+driver.maximize_window()
+driver.get("http://demowebshop.tricentis.com/")
+time.sleep(3)
+
+driver.find_element_by_link_text("Register").click()
+
+time.sleep(2)
+
+driver.find_element_by_name("FirstName").send_keys("Steve")
+
+time.sleep(2)
+
+driver.find_element_by_id("LastName").send_keys("Jobs")
+
+time.sleep(2)
+
+driver.find_element_by_id("register-button").click()
+
+# Click on ShoppingCart link.
+driver.find_element_by_partial_link_text("Shopping").click()
+
+
+#using css selector
+#General Format for cssSelector.
+HTMLTAG[property="value"]
+
+driver.find_element_by_css_selector("input[value='Search store']").send_keys("Computer")
+time.sleep(3)
+driver.find_element_by_css_selector("input[value='Search']").click()
+driver.close()
+
+
+
+
+xpath-
+xapth is the path of the element in HTML tree
+
+while writing xpath we specify the path path using '/ ' foward slash
+
+First forward slash "/" represent the beginning of the HTML tree, it is called as root.
+
+After every "/" we must specify HTML tag for the immediate child node.
+
+If there are any duplicate elements, then we use index. It should be used in square brackets "[]". Index starts from Digit one.
+
+
+
+General format of the xpath
+HTMLTAG[@Property="Value"]
+If the "text" attribute is used in the xpath,
+HTMLTAG[text()='value']
+HTMLTAG[contains(@property, "value")] # To Ignore white spaces
+HTMLTAG[contains(text(), "value")]
+
+
+#xapth of an element
+
+driver.find_element_by_xpath("//input[@class='search-box-text ui-autocomplete-input']").send_keys("Computer")
+driver.find_element_by_xpath("//input[@type='submit']").click()
+
