@@ -1,3 +1,15 @@
+#how to launch chrome browser using selenium
+
+chromepath=r"C:\Users\7000026199\Downloads\chromedriver_win32\chromedriver.exe"
+from selenium import webdriver
+driver= webdriver.Chrome(executable_path=chromepath)
+driver.close()
+
+
+
+
+
+
 #locators stratergies usage, when to use and what to use
 
 There are 8 locators to identify object on the webpage:
