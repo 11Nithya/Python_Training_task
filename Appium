@@ -1,0 +1,46 @@
+Appium 
+    open source mobile testing automation tool 
+    can automate native web and hybrid applications
+    supports multiple languages like python,ruby,c#,Java etc
+    supports andriod, ios and windows desktop platforms
+    its is a cross platform automation tool used to run same test cases on multiple platforms. Multiple devices can be easily tested by appium in parallel
+    
+ Architecture of Appium:
+ 
+  The scripts wriiten in any language in appium client once we run the webdriver wire protocal that is Json using this the scripts gets converted into https.base .request which is 
+  understable by the appium server. The appium server runs the request and the automates the mobile application using their respective automation framework
+  
+  UI AUTOMATION FOR IOS
+  UI AUTOMATOR FOR ANDRIOD
+  
+  
+  
+  #Difference between Appium and Selenium
+  
+  Appium
+    
+    used in mobile application(andriod and ios)
+    specific driver andriod driver and ios driver
+    
+   Selenium
+   
+    used for mobile web applications
+    It is has webdriver which run on web applications
+    
+    
+    
+   # explain native, web and hybrid applications
+   
+   
+   Native application- Native apps are developed for use on a specific device and can be installed from the App Store such as Google Store.
+   They can work offline and can also use the device notification system.
+   eg: Calendar, calculator
+   
+   Web Application:  They are the websites that run on browsers. They are not developed for particular browsers . Since they run on browsers they dont give any installation
+   eg: flipkart
+   
+   Hybrid Application: It is the combination of web and native application 
+   eg: OLA, instagram
+   
+   
+  
